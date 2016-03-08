@@ -1,34 +1,31 @@
 @import 'variables'
 @import 'colors'
+@import 'layout'
 
 
 body
 	background: $blue-white
+
+
+header>.cv-header
+	+fixedPosition(0, 0)
+	display: box
+	width: 100%
+	height: 50px
+	background: $med-charcoal
+	color: $lt-charcoal
+	padding-top: 15px
+	padding-left: 25px
+	border-bottom: 1px solid $dk-charcoal
 
 .containerIntro
 	display: box
 	position: relative
 	height: 700px
 
-
-header>.cv-header
-	display: box
-	width: 100%
-	height: 50px
-	background: $med-charcoal
-	position: fixed
-	left: 0
-	top: 0
-	color: $lt-charcoal
-	padding-top: 15px
-	padding-left: 25px
-	box-shadow: 5px 2px 2px $med-charcoal
-
 .itemIntro
+	+absolutePositioned(20%, 15%) //using mixin from _layouts.sass
 	display: box
-	position: absolute
-	right: 15%
-	top: 30%
 	width: 350px
 	h1
 		border-bottom: 1px solid #333
