@@ -1,0 +1,38 @@
+//_typography.sass
+
+
+// Raleway headings, Roboto body.
+$fontStackBody: 'Roboto', sans-serif;
+$fontStackHeadings: 'Raleway', sans-serif;
+$bodyFontSize: 16px
+$bodyLineHeight: 1.428 * $bodyFontSize
+$h4BG: #999
+
+
+body
+	font-family: $fontStackBody
+	font-weight: 400
+	font-size: $bodyFontSize
+	line-height: $bodyLineHeight
+
+h1,
+h2,
+h3,
+h4
+	font-family: $fontStackHeadings
+	font-weight: 400
+	line-height: 1em
+
+h4.posTitle,
+h4.dateRange
+	padding: .2rem
+	background: $h4BG
+	color: $ghost-white
+
+#books
+	li
+		a
+			width: calc(50% - 2em)
+  			transition: transform 1s
+
+

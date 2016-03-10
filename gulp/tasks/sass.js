@@ -5,7 +5,7 @@ module.exports = function (gulp, config, $) {
 	var prod = $.util.env.prod;
 
 	var sass = function () {
-		var source = config.path.src + '/sass/app.sass';
+		var source = config.path.src + '/sass/*.sass'; // was ...app.sass
 
 		return gulp.src(source)
 			.pipe($.sourcemaps.init())

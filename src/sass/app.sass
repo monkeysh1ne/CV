@@ -1,11 +1,11 @@
 @import 'variables'
 @import 'colors'
 @import 'layout'
+@import 'typography'
 
 
 body
 	background: $blue-white
-
 
 header>.cv-header
 	+fixedPosition(0, 0)
@@ -21,14 +21,12 @@ header>.cv-header
 .containerIntro
 	display: box
 	position: relative
-	height: 700px
+	height: 300px
 
 .itemIntro
-	+absolutePositioned(20%, 15%) //using mixin from _layouts.sass
+	+absolutePositioned(50%, 15%) //using mixin from _layouts.sass
 	display: box
 	width: 350px
-	h1
-		border-bottom: 1px solid #333
 
 section.main
 	margin-left: 20px

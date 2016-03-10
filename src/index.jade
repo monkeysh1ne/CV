@@ -5,27 +5,31 @@ html(lang='en')
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title CV - Darrell Mayson
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+
+		<!-- Google Fonts -->
+		link(href='https://fonts.googleapis.com/css?family=Roboto|Raleway' rel='stylesheet' type='text/css')
+
+		<!-- Main stylesheet -->
 		link(rel="stylesheet" href="css/app.css" type="text/css")
 	body
 		header
 			.cv-header t: xxx-xxx-xxxx e: my@email.com
+
+
 		.containerIntro
 			.itemIntro
 				h1 CV
-				h2 <em>Darrell Mayson</em>
+				h1.small Darrell Mayson
+
 		section.main
 			h2 Career Profile
-			h3 Aug 2014 – Present
-			h3 Downer/ITS – STMS (Site Traffic Management Supervisor)
-			article
-				p
-					|Current responsibilities include plannning and executing site traffic management for all
-					|assigned Downer worksites as directed by ITS Supervisor. This includes ensuring all
-					|documentation is present and correct and the site operates in accordance with the Code
-					|of Practice for Temporary Traffic Mgmt (CoPTTM). I liaise with local bodies, Downer
-					|management, contractors on site and the general public. Duties include managing any
-					|traffic controllers required for the safe operation of the site.
-					|Gained STMS(L1) qualification and Class2 driver license.b
+				.employmentHeader
+					h4.dateRange Aug 2014 – Present
+					h4.posTitle Downer/ITS – STMS (Site Traffic Management Supervisor)
+			article.employment#downer Current responsibilities include plannning and executing site traffic management for all assigned Downer worksites as directed by ITS Supervisor. This includes ensuring all documentation is present and correct and the site operates in accordance with the of Practice for Temporary Traffic Mgmt (CoPTTM). I liaise with local bodies, Downer management, contractors on site and the general public. Duties include managing any traffic controllers required for the safe operation of the site. Gained STMS(L1) qualification and Class2 driver license.
+		
+
+
 
 
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
